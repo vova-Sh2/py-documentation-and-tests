@@ -194,7 +194,8 @@ class MovieSessionViewSet(viewsets.ModelViewSet):
         ]
     )
     def list(self, request, *args, **kwargs):
-        """Retrieve a filtered list of MovieSessions by date (Y-m-d) and movie IDs"""
+        """Retrieve a filtered list of MovieSessions.
+         By date (Y-m-d) and movie IDs"""
         return super().list(request, *args, **kwargs)
 
     def get_serializer_class(self):
